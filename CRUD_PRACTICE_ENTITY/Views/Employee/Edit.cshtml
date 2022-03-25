@@ -1,0 +1,35 @@
+﻿@model CRUD_PRACTICE_ENTITY.Models.Employee
+@{ }
+<div class="row">
+    <div class="col-6 offset-3" >
+
+        <form asp-action="Edit" asp-controller="Employee" method="post">
+            <div>
+                <label asp-for="Name"></label>
+                <input asp-for="Name" />
+
+            </div>
+            <div>
+                <label asp-for="Email"></label>
+                <input asp-for="Email" />
+
+            </div>
+            <div>
+                <label asp-for="MobileNo"></label>
+                <input asp-for="MobileNo" />
+
+            </div>
+            <div>
+                <label asp-for="Address"></label>
+                <input asp-for="Address" />
+                <span>asp-validation-for</span>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+
+
+    </div>
+
+</div>

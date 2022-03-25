@@ -1,0 +1,22 @@
+﻿@model IEnumerable<CRUD_PRACTICE_ENTITY.Models.Location>
+@{ 
+
+
+}
+<table class="table table-bordered">
+    <tr class="table table-danger text-center">
+        <th>Location</th>
+        <th>Details</th>
+    </tr>
+    @foreach(var Locations in Model)
+            {
+<tr class="text-center align-content-center">
+    <td>@Locations.Place</td>
+    <td>@Locations.Details</td>
+
+</tr>
+            }
+
+
+</table>
+
